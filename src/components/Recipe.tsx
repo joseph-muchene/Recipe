@@ -41,7 +41,7 @@ function Recipe({ hit }: any) {
             </div>
             <ul className="list-group list-group-flush">
                 {hit.recipe?.ingredientLines?.map((ingredient: any, index: number) => (<li className="list-group-item">
-                    <span className="mx-2 text-primary">{index}</span>{ingredient}
+                    {ingredient}
                 </li>))}
 
             </ul>
