@@ -7,7 +7,8 @@ function Nav() {
                 <div className="container-fluid">
                     <span className="navbar-brand mb-0 h1">Reci</span>
                 </div>
-            </nav></div>
+            </nav>
+            </div>
     )
 }
 
