@@ -21,13 +21,16 @@ function App(): JSX.Element {
   const [loading, setLoading] = useState(false);
   const [keyword, setKeyword] = useState("");
 
+  console.log(import.meta.env); // 123
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
 
     try {
       const response: AxiosResponse = await axios.get(
-        `https://api.edamam.com/api/recipes/v2?type=public&q=${keyword}&app_id=f9eb0533&app_key=904f2441c5f9350ef4d7a6f4e606c50b`
+        `https://api.edamam.com/api/recipes/v2?type=public&q=${keyword}&app_id=${
+          import.meta.env.VITE_APP_ID
+        }&app_key=${import.meta.env.VITE_APP_KEY}`
       );
       setData(response.data);
     } catch (error) {
