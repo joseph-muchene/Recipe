@@ -1,6 +1,5 @@
 import React, { useState, ChangeEvent, FormEvent } from "react";
 import axios, { AxiosResponse } from "axios";
-import "./App.css";
 import Nav from "./Nav";
 import Recipes from "./components/Recipes";
 
