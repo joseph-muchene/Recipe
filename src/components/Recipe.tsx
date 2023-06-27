@@ -9,7 +9,7 @@ interface RecipeProps {
       ingredientLines: string[];
     };
   };
-}
+} 
 
 function Recipe({ hit }: RecipeProps): JSX.Element {
   function switchColor(index: number): string {
