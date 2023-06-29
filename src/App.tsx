@@ -21,7 +21,7 @@ function App(): JSX.Element {
   const [loading, setLoading] = useState(false);
   const [keyword, setKeyword] = useState("");
 
-  console.log(import.meta.env); // 123
+  // console.log(import.meta.env); // 123
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
